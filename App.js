@@ -1,22 +1,31 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, ActivityIndicator } from "react-native";
 import * as Font from "expo-font";
 
 export default function App() {
   const [fontLoaded, setFontLoaded] = React.useState(false);
 
-  React.useEffect(async () => {
+  async function loadFont() {
     await Font.loadAsync({
-      DymaxionScript: require("./assets/fonts/DymaxionScript.TTF"),
+      DymaxionScript: require("./assets/fonts/DymaxionScript.ttf"),
     });
-    setFontLoaded(true);
+
+    setFontLoaded(false);
+  }
+
+  React.useEffect(() => {
+    loadFont();
   }, []);
 
-  return (
+  return fontLoaded ? (
     <View style={styles.container}>
       <Text>Breath.</Text>
       <Text>Breath.</Text>
       <Text>Breath.</Text>
+    </View>
+  ) : (
+    <View style={styles.container}>
+      <ActivityIndicator size="large" color="#0000ff" />
     </View>
   );
 }
