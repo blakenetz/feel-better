@@ -1,10 +1,6 @@
 .welcome {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-center;
+  @extend %full-screen;
   background-color: #ff6f69;
   background: radial-gradient(#ff6f69, #ff8b87);
 

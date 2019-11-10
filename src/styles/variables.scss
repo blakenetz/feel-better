@@ -4,3 +4,15 @@ $yellow: #f7ee23;
 $pink: #e63f85;
 $white: #f8ecd4;
 $purple: #464076;
+
+%flex-center {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+%full-screen {
+  width: 100%;
+  min-height: 100vh;
+}
