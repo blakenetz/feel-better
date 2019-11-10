@@ -12,19 +12,19 @@
     font-family: "Monoton", sans-serif;
     font-weight: 400;
     font-size: 5rem;
-    color: #5fc3c8;
+    color: $blue;
 
     &.char:nth-of-type(2) {
-      color: #f7ee23;
+      color: $yellow;
     }
     &.char:nth-of-type(3) {
-      color: #e63f85;
+      color: $pink;
     }
     &.char:nth-of-type(4) {
-      color: #f8ecd4;
+      color: $white;
     }
     &.char:nth-of-type(5) {
-      color: #464076;
+      color: $purple;
     }
   }
 }
