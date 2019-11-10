@@ -1,6 +1,8 @@
 import React from "react";
-import { StyleSheet, Text, View, ActivityIndicator } from "react-native";
+import { StyleSheet, View, ActivityIndicator } from "react-native";
 import * as Font from "expo-font";
+
+import Welcome from "./components/Welcome";
 
 export default function App() {
   const [fontLoaded, setFontLoaded] = React.useState(false);
@@ -10,7 +12,7 @@ export default function App() {
       DymaxionScript: require("./assets/fonts/DymaxionScript.ttf"),
     });
 
-    setFontLoaded(false);
+    setFontLoaded(true);
   }
 
   React.useEffect(() => {
@@ -18,11 +20,7 @@ export default function App() {
   }, []);
 
   return fontLoaded ? (
-    <View style={styles.container}>
-      <Text>Breath.</Text>
-      <Text>Breath.</Text>
-      <Text>Breath.</Text>
-    </View>
+    <Welcome />
   ) : (
     <View style={styles.container}>
       <ActivityIndicator size="large" color="#0000ff" />
