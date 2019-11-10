@@ -1,0 +1,30 @@
+.welcome {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6f69;
+  background: radial-gradient(#ff6f69, #ff8b87);
+
+  .char {
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    color: #5fc3c8;
+
+    &.char:nth-of-type(2) {
+      color: #f7ee23;
+    }
+    &.char:nth-of-type(3) {
+      color: #e63f85;
+    }
+    &.char:nth-of-type(4) {
+      color: #f8ecd4;
+    }
+    &.char:nth-of-type(5) {
+      color: #464076;
+    }
+  }
+}

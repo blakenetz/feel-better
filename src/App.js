@@ -1,10 +1,12 @@
 import React from "react";
 
+import Welcome from "./components/Welcome";
+
 function App() {
   return (
-    <section>
-      <h1>hiiii</h1>
-    </section>
+    <React.Fragment>
+      <Welcome />
+    </React.Fragment>
   );
 }
 
