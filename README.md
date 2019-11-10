@@ -1,10 +1,7 @@
-# Feel Better
+# Feel Better :)
 
-I hope this app makes you feel better.
+I hope this website makes you feel better
 
-If you read this, please contribute.
+## Tools
 
-## Tech
-
-- React Native (bootstrapped with Expo)
-- Yarn
+- CRA
