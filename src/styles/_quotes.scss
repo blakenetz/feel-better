@@ -13,13 +13,12 @@
   overflow-x: hidden;
   width: 100%;
 
-  .icon {
-    fill: $blue;
-    width: 100%;
+  h1 {
+    text-align: center;
   }
 
   .btn {
-    color: white;
+    color: $white;
     cursor: pointer;
     font-family: inherit;
     font-size: inherit;
@@ -54,6 +53,11 @@
     width: 100%;
   }
 
+  .icon {
+    fill: $blue;
+    width: 100%;
+  }
+
   .wrapper {
     height: $quote-size;
     margin: 0 auto;
@@ -84,6 +88,7 @@
       transform calc(#{$duration} / 2) $ease;
     width: $quote-size;
     z-index: 1;
+    color: $purple;
 
     &.previous,
     &.next {

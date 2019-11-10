@@ -4,7 +4,7 @@ import PropType from "prop-types";
 
 const quotes = [
   { quote: "No Feeling is Final" },
-  { quote: "make your loves multiply" },
+  { quote: "Make your loves multiply" },
   {
     quote:
       "Practice kindness all day to everybody and you will realize you’re already in heaven now",
@@ -33,8 +33,8 @@ function Quote({ quote, author, current, index, handleClick }) {
 
   return (
     <li className={classnames(classes)} onClick={handleClick}>
-      <h1>{quote}.</h1>
-      {author && <h2>- {author}</h2>}
+      <h2>{quote}.</h2>
+      {author && <h3>- {author}</h3>}
     </li>
   );
 }
@@ -78,6 +78,7 @@ function Quotes(props) {
   return (
     <section className="quotes">
       <div className="wrapper">
+        <h1>Someone once said...</h1>
         <ul style={style}>
           {quotes.map((quote, i) => (
             <Quote
