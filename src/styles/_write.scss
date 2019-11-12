@@ -1,0 +1,40 @@
+.write {
+  $border: 5px solid black;
+  $font-size: 1rem;
+
+  @extend %flex-center;
+  @extend %full-screen;
+  background-color: #cc6d3f;
+  background: radial-gradient(#cc6d3f, #f2c177 80%);
+
+  & > * {
+    margin: 2rem 0;
+  }
+
+  textarea {
+    resize: none;
+    outline: #d93f38;
+    overflow: auto;
+    width: 66%;
+    max-width: 50rem;
+    min-height: 33vh;
+    font-size: $font-size;
+    border: $border;
+    padding: 0.5rem;
+  }
+
+  button {
+    border: $border;
+    background: white;
+    font-size: $font-size;
+    padding: $font-size;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
