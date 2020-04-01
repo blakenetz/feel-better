@@ -7007,6 +7007,11 @@ optionator@^0.8.1, optionator@^0.8.2:
     type-check "~0.3.2"
     wordwrap "~1.0.0"
 
+oridomi@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/oridomi/-/oridomi-1.1.2.tgz#5e80118bd4deb2606d805c16ea31333ddd9f86bf"
+  integrity sha1-XoARi9TesmBtgFwW6jEzPd2fhr8=
+
 original@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/original/-/original-1.0.2.tgz#e442a61cffe1c5fd20a65f3261c26663b303f25f"

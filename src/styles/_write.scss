@@ -11,16 +11,39 @@
     margin: 2rem 0;
   }
 
-  textarea {
+  .textarea {
     resize: none;
     outline: #d93f38;
     overflow: auto;
-    width: 66%;
-    max-width: 50rem;
-    min-height: 33vh;
     font-size: $font-size;
     border: $border;
     padding: 0.5rem;
+    background: #fff;
+    z-index: 1;
+    width: 66%;
+    max-width: 50rem;
+    min-height: 33vh;
+  }
+
+  textarea {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .pseudo-textarea {
+    margin: 0 auto;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .textarea-wrapper {
+    width: 100%;
+    position: relative;
+    min-height: 33vh;
   }
 
   button {

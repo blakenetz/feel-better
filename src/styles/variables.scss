@@ -5,6 +5,10 @@ $pink: #e63f85;
 $white: #f8ecd4;
 $purple: #464076;
 
+$font: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+
 %flex-center {
   display: flex;
   flex-flow: column;

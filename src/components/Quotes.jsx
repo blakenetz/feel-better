@@ -4,31 +4,31 @@ import PropType from "prop-types";
 
 const quotes = [
   { quote: "No Feeling is Final" },
-  { quote: "Make your loves multiply" },
+  { quote: "Make your love multiply" },
   {
     quote:
       "Practice kindness all day to everybody and you will realize you’re already in heaven now",
-    author: "Jack Kerouac",
+    author: "Jack Kerouac"
   },
   {
     quote:
       "You can't go back and change the beginning, but you can start where you are and change the ending",
-    author: "C.S. Lewis",
+    author: "C.S. Lewis"
   },
   {
-    quote: "Forgive yourself",
+    quote: "Forgive yourself"
   },
   {
-    quote: "Be still. Be silent. For a moment at least",
+    quote: "Be still. Be silent. For a moment at least"
   },
-  { quote: "Whatever you're fishing for, catch and release" },
+  { quote: "Whatever you're fishing for, catch and release" }
 ];
 
 function Quote({ quote, author, current, index, handleClick }) {
   const classes = {
     current: current === index,
     previous: current - 1 === index,
-    next: current + 1 === index,
+    next: current + 1 === index
   };
 
   return (
@@ -72,7 +72,7 @@ function Quotes(props) {
   }
 
   const style = {
-    transform: `translateX(-${current * (100 / quotes.length)}%)`,
+    transform: `translateX(-${current * (100 / quotes.length)}%)`
   };
 
   return (
@@ -105,11 +105,11 @@ Quote.propTypes = {
   author: PropType.string,
   current: PropType.number.isRequired,
   index: PropType.number.isRequired,
-  handleClick: PropType.func.isRequired,
+  handleClick: PropType.func.isRequired
 };
 PaginationButton.propTypes = {
   type: PropType.oneOf(["previous", "next"]).isRequired,
-  handleClick: PropType.func.isRequired,
+  handleClick: PropType.func.isRequired
 };
 
 export default Quotes;
