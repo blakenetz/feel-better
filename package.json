@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "oridomi": "^1.1.2",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
